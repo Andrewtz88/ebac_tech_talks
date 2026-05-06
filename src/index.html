@@ -3,23 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ebac Tech Talks</title>
+    <title>Aniversário do André</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
-            <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
+            <img class="hero__logo" src="./images/Andre.jpg" alt="EBAC">
             <p class="hero__text">
-                O maior evento de tecnologia do Brasil, começa em 10d 12h 20m 15s
+                Aniversário do André 🎉 Conto com todos vocês! <span id="contador"> </span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__item">
+                        <b>Localização</b>
+                        Nova Brasília - Cariacica - ES
+                    </li>
+                    <li class="infos-bar__item">
+                        <b>Preço</b>
+                        R$ 30,00
+                    </li>
+                    <li class="infos-bar__item">    
+                        <b>Quando</b>
+                        06/01/2027 às 19hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Confirmar Presença
+                </a>
+            </div>
         </div>
     </header>
+
+    <section class="event event--frontend">   
+        <div class="container" data-aos="fade-right">   
+            <div class="event__details">
+                <h2 class="event__details__title">🎂 Bolos e Doces</h2>
+                <p class="event__details__description">
+                    Prepare-se para uma mesa recheada de sabores incríveis! O aniversário contará com bolos especiais, brigadeiros, beijinhos, cupcakes, doces variados e muitas sobremesas para deixar a festa ainda mais deliciosa. Tudo preparado para garantir aquele clima perfeito de comemoração.
+                </p>
+            </div>
+            <img class="event__image" src="./images/Tema.png" alt="Front-end">
+        </div>
+    </section>
+
+    <section class="event event--ux-ui event--image-left">   
+        <div class="container" data-aos="fade-left">   
+            <div class="event__details">
+                <h2 class="event__details__title">🥤 Bebidas</h2>
+                <p class="event__details__description">
+                    Durante toda a festa teremos bebidas geladas para acompanhar cada momento da comemoração. Refrigerantes, sucos, água e outras opções estarão disponíveis para manter todo mundo animado e refrescado enquanto aproveita a festa.
+                </p>
+            </div>
+            <img class="event__image" src="./images/Tema.png" alt="UI/UX">
+        </div>
+    </section>
+
+    <section class="event event--data-science">   
+        <div class="container" data-aos="fade-right">   
+            <div class="event__details">
+                <h2 class="event__details__title">🔥 Churrasco</h2>
+                <p class="event__details__description">
+                    O churrasco será um dos grandes destaques da noite! Carnes preparadas na brasa, espetinhos e muito sabor para reunir todos em um ambiente descontraído e cheio de diversão. Um verdadeiro churrasco de aniversário para aproveitar até o fim da festa.
+                </p>
+            </div>
+            <img class="event__image" src="./images/Tema.png" alt="Data Science">
+        </div>
+    </section>
+
+    <section class="event event--backend event--image-left">   
+        <div class="container" data-aos="fade-left">   
+            <div class="event__details">
+                <h2 class="event__details__title">🥟 Salgados</h2>
+                <p class="event__details__description">
+                    A festa também contará com uma variedade de salgados deliciosos para todos aproveitarem. Coxinhas, quibes, bolinhas de queijo, pastéis e muitos outros sabores estarão presentes para completar a experiência e deixar o aniversário ainda mais especial.
+                </p>
+            </div>
+            <img class="event__image" src="./images/Tema.png" alt="Backend">
+        </div>
+    </section>
     
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>
